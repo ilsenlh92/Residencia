@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SGRE - Sistema de gestión de la residencia estudiantil</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>639</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Archivo</string>
+    </property>
+    <addaction name="opc_salir"/>
+   </widget>
+   <widget class="QMenu" name="menuCRUD">
+    <property name="title">
+     <string>CRUD</string>
+    </property>
+    <addaction name="opc_crud_est_nac"/>
+    <addaction name="opc_crud_est_ext"/>
+   </widget>
+   <widget class="QMenu" name="menuOperaciones">
+    <property name="title">
+     <string>Operaciones</string>
+    </property>
+    <addaction name="opc_act_dir"/>
+    <addaction name="opc_por_ciento"/>
+    <addaction name="opc_prom"/>
+    <addaction name="opc_menor"/>
+    <addaction name="opc_datos"/>
+   </widget>
+   <widget class="QMenu" name="menuAyuda">
+    <property name="title">
+     <string>Ayuda</string>
+    </property>
+    <addaction name="opc_acerca"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuCRUD"/>
+   <addaction name="menuOperaciones"/>
+   <addaction name="menuAyuda"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="opc_salir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+X</string>
+   </property>
+  </action>
+  <action name="opc_crud_est_nac">
+   <property name="text">
+    <string>Estudiante Nacional</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+N</string>
+   </property>
+  </action>
+  <action name="opc_crud_est_ext">
+   <property name="text">
+    <string>Estudiante Extranjero</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+E</string>
+   </property>
+  </action>
+  <action name="opc_act_dir">
+   <property name="text">
+    <string>Actualizar dirección a estudiante nacional</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+  <action name="opc_por_ciento">
+   <property name="text">
+    <string>Por ciento de estudiantes extranjeros</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+  </action>
+  <action name="opc_prom">
+   <property name="text">
+    <string>Promedio de edad de los estudiantes extranjeros</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+M</string>
+   </property>
+  </action>
+  <action name="opc_menor">
+   <property name="text">
+    <string>Datos del menor estudiante nacional de una provincia</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+T</string>
+   </property>
+  </action>
+  <action name="opc_datos">
+   <property name="text">
+    <string>Datos de los estudiantes nacionales de una facultad</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="opc_acerca">
+   <property name="text">
+    <string>Acerca de</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+A</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
